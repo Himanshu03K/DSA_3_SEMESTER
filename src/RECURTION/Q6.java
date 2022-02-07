@@ -15,7 +15,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 class SearchValueAndPrint {
-    static int count=0;
+
     static ArrayList<Integer> res = new ArrayList<>();
     public static ArrayList<Integer> res(int arr[], int current_index, int search_value)
     {

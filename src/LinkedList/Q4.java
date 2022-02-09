@@ -1,0 +1,96 @@
+package LinkedList;
+
+/*
+Q.Mid Point Linked List
+
+For a given singly linked list of integers, find and return the node present at the middle of the list.
+
+
+Note : If the length of the singly linked list is even, then return the first middle node.
+
+Example: Consider, 10 -> 20 -> 30 -> 40 is the given list, then the nodes present at the middle with respective data values are, 20 and 30. We return the first node with data 20.
+ Input format :
+The first line contains an Integer 't' which denotes the number of test cases or queries to be run. Then the test cases follow.
+
+The first and the only line of each test case or query contains the elements of the singly linked list separated by a single space.
+Remember/Consider :
+While specifying the list elements for input, -1 indicates the end of the singly linked list and hence, would never be a list element
+ Output Format :
+For each test case/query, print the data value of the node at the middle of the given list.
+
+Output for every test case will be printed in a seperate line.
+Constraints :
+1 <= t <= 10^2
+0 <= M <= 10^5
+Where M is the size of the singly linked list.
+
+Time Limit: 1sec
+Sample Input 1 :
+1
+1 2 3 4 5 -1
+Sample Output 1 :
+3
+Sample Input 2 :
+2
+-1
+1 2 3 4 -1
+Sample Output 2 :
+2
+ */
+
+import java.util.Scanner;
+
+public class Q4 {
+    Node head;
+    static class Node{
+        int data;
+        Node next;
+
+        Node(int data){
+            this.data=data;
+        }
+    }
+    public void add(int data) {
+        Node newNode = new Node(data);
+        if(head==null) {
+            head=newNode;
+            return;
+        }
+        Node temp=head;
+        while(temp.next!=null){
+            temp=temp.next;
+        }
+        temp.next=newNode;
+    }
+    public static int findMiddle(Node head){
+        if(head==null || head.next==null){
+            return 0;
+        }
+        Node slow = head;
+        Node fast=head;
+        while(fast.next!=null && fast.next.next!=null){
+            slow = slow.next;
+            fast=fast.next.next;
+        }
+        int data=slow.data;
+        return data;
+    }
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int t = sc.nextInt();
+        while (t-- > 0) {
+            Q4 obj = new Q4();
+            System.out.println("Enter the elements of linked list : ");
+            int a=0;
+            while(a!=-1) {
+                a= sc.nextInt();
+                obj.add(a);
+            }
+            int mid =findMiddle(obj.head);
+            if(mid==0)
+                System.out.println();
+            else
+                System.out.println("element at middle is : "+mid);
+        }
+    }
+}

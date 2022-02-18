@@ -1,4 +1,4 @@
-package PriorityQueuewithLinkedList;
+package Queue.PriorityQueuewithLinkedList;
 
 public class Node {
     Node next;

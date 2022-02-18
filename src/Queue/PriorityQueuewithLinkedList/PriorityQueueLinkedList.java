@@ -1,4 +1,4 @@
-package PriorityQueuewithLinkedList;
+package Queue.PriorityQueuewithLinkedList;
 
 /*
 A priority queue is a data structure in which each element is assigned a priority.The priority of all element

@@ -13,6 +13,7 @@ public class Inorder {
     }
 
     public static void main(String[] args) {
+
         BinaryNode<Integer> T1=BinaryTree.insert();
         inoreder(T1);
     }

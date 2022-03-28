@@ -9,9 +9,9 @@ The general rules of processing the elements of a priority queue are
 Basic applications are
 1) Bandwidth Management
 2) Discrete event simulation
-3) Haffman Coding
+3) Huffman Coding
 4) best first search algorithm
-5) pri's algorithms for minimumm spanning tree
+5) prim's algorithms for minimum spanning tree
 Two types of Priority Queue
 1) Assending priority queue
 2) Descending priority queue
@@ -37,7 +37,7 @@ public class PriorityQueueLinkedList {
         } else {
             Node temp = front;
 
-            while (temp.next != null && temp.next.priority <= newnode.priority) {
+            while (temp.next != null && temp.next.priority <= newnode.priority ) {
                 temp = temp.next;
             }
             newnode.next = temp.next;

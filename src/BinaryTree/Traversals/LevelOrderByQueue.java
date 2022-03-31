@@ -2,13 +2,14 @@ package BinaryTree.Traversals;
 
 import BinaryTree.BinaryNode;
 import BinaryTree.BinaryTree;
+import Queue.PriorityQueuewithLinkedList.Node;
 
 import java.util.LinkedList;
 import java.util.Queue;
 
 public class LevelOrderByQueue {
     public static void PrintLevelOrder(BinaryNode root){
-        Queue<BinaryNode> q= new LinkedList<>();
+        QueueByLLGeneric<> q= new QueueByLLGeneric<>();
         q.add(root);
 
         while (!q.isEmpty()){

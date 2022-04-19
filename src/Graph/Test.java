@@ -15,7 +15,7 @@ public class Test {
 
         while (true) {
 
-            System.out.println("If you want to termenate please enter the value of key to \"Stop\"");
+            System.out.println("If you want to terminate please enter the value of key to \"Stop\"");
             System.out.println("Enter key");
 
             String key=sc.next();

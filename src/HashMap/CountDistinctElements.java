@@ -36,4 +36,9 @@ public class CountDistinctElements {
             System.out.println(map.size());
         }
     }
+
+    public static void main(String[] args) {
+        int a[]={1,2,2,1,3,1,1,3};
+        countDistinct(a,4);
+    }
 }

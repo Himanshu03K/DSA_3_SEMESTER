@@ -13,8 +13,8 @@ Sample Output
 3
 2
 2
-
  */
+
 import java.util.HashMap;
 import java.util.Map;
 

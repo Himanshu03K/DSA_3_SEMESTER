@@ -71,6 +71,7 @@ public class KruskalAlgorithm {
             Edge obj = new Edge(v1,v2,weight);
             edgearray[i]= obj;
         }
+
         Edge[] mst = kruskal(edgearray,v);
         for (int i = 0; i <mst.length ; i++) {
             if(mst[i].v1<mst[i].v2)

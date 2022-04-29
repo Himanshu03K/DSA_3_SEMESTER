@@ -12,9 +12,8 @@ public class DiskstraAglorithm {
         for (int i = 1; i <n ; i++) {
             weight[i] = Integer.MAX_VALUE;
         }
-
-
     }
+
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);

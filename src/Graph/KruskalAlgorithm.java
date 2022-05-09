@@ -2,7 +2,7 @@ package Graph;
 
 import java.util.Arrays;
 import java.util.Scanner;
-
+// Kruskal Algorithm
 class Edge implements  Comparable<Edge>
 {
     int v1;

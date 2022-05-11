@@ -3,6 +3,7 @@ package SearchingAndSorting;
 import java.util.Scanner;
 
 public class InsertionSort {
+    // Insertion Sort
     static void Insort(int arr[]) {
         for (int i = 1; i < arr.length; i++) {
             int temp = arr[i];

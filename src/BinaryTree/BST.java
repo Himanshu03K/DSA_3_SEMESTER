@@ -1,7 +1,7 @@
 package BinaryTree;
 
 import java.util.Scanner;
-
+// Check Binary Search Tree
 public class BST {
     public static BinaryNode<Integer> root;
     static Scanner sc =null;

@@ -3,6 +3,7 @@ package SearchingAndSorting;
 import java.util.Scanner;
 
 public class Selection {
+    // Selection Sort
     static void SSort(int []arr) {
         int temp, index = 0, c = 0;
         for (int i = 0; i < arr.length - 1; i++) {
